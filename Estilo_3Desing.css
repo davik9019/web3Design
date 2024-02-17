@@ -13,14 +13,14 @@
   align-items: center;/*Alinea en eje y */
   justify-content: flex-start;/*Alinea en eje x */
   background-color: #ffffff;
-
+  min-height: 100vh;
 }
 /* Banner 3Desing*/
 .Desing{
-    top: 0;
-    left: 0;
- display: flex;
-    align-items: flex-start;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
   width: 1349px;
   height: 80px;
   margin: 0px;
@@ -50,8 +50,8 @@
   }
   .menu{
     margin-top: 10px;
-  width: 1300px;
-  height: 60px;
+    width: 1300px;
+    height: 60px;
 
   }
 
@@ -86,14 +86,6 @@ li a:hover{
    }
 */
 /* recuadro borde negro */
-.imagen{
-  margin: 30px;
-  position: relative;
-  width: 500px;
-  height: 500px;
-  border: 3px solid #0a0a0a;
-  border-radius: 5px;
-  }
 
   .slider{
     width: 500px;
@@ -194,28 +186,13 @@ li a:hover{
  }
 
  /*div cont-img*/
- .cont-img-1{
-  width: 135px;
-  height: 100px;
-  margin: 0.5em;
- }
- .cont-img-2{
-  width: 135px;
-  height: 100px;
-  margin: 0.5em;
- }
- .cont-img-3{
-  width: 135px;
-  height: 100px;
-  margin: 0.5em;
- }
  .cont-img-4{
   width: 135px;
   height: 100px;
   margin: 0.5em;
  }
  .cont-img-5{
-  width: 135px;
+  width: 100px;
   height: 100px;
   margin: 0.5em;
  }
@@ -226,26 +203,173 @@ li a:hover{
  }
 /*div diseños*/
 .seccion-diseños{
+  display: flex;
+  flex-wrap: wrap;
   background-color: #f4f4f4f1;
   border-radius: 5px;
+  margin-left: 1em;
+  gap: 1em;
+  width: 500px;
+  height: 600px;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 /*div videos*/
 .seccion-videos{
+  display: flex;
+  flex-wrap: wrap;
   background-color: #f4f4f4f1;
   border-radius: 5px;
+ margin: 1em;
+  gap: 1em;
+  width: 100%;
+  height: 70%;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
+/* estilos de videos tipo youtube*/
+	.contenedor-video{
+		display: flex;
+    flex-wrap: wrap;
+		width: 93%;
+    height: 87%;
+    padding-top: 0em;
+    padding-right: 1em;
+    padding-left: 0em;
+    padding-bottom: 1em;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+	}
+	.colum-der{
+    display: flex;
+    flex-direction: column;
+		width: 28em;
+    height: 25em;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+	}
+  /* imagen del video*/
+  .img-video{
+    margin-top:1em;
+    margin-left:2.5em;
+    display: flex;
+		width: 80%;
+    height: 50%;
+    border-radius: 0.5rem;
+    border: 1px solid #0a0a0a;
+    position: relative;
+    justify-content: space-evenly;
+    align-content: space-around;
+
+  }
+  .play-btn{
+		width: 60px;
+		height: 60px;
+    margin-top: -3em;
+    margin-left: 11.5em;
+		cursor: pointer;
+    position: absolute;
+	}
+  /*texto descriptivo*/
+  .Descripcion{
+    display: flex;
+    margin-top:1em;
+    margin-left:2.5em;
+    width: 80%;
+    height: 15%;
+    box-shadow: #0a0a0a;
+    border-radius: 0.5em;
+    border: 1px solid #0a0a0a;
+    background-color: #ffffff;
+  }
+  .colum-izq{
+    display: flex;
+    margin-top:0em;
+    padding-left: 1em;
+    width: 20%;
+    height: 80%;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+	}
+	
+	.peq-img-fila{
+		display: flex;
+    background-color: #ffffff;
+    margin: 1px 0;
+    width: 90%;
+    height: 75%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border: 1px solid #0a0a0a;
+    flex-wrap: wrap;
+    flex-direction: column;
+	}
+	.peq-img{
+		margin-top:0em;
+    margin-left:0em;
+    display: flex;
+		width: 80%;
+    height: 50%;
+    border-radius: 0.5rem;
+    position: relative;
+    justify-content: space-evenly;
+    align-content: space-around;
+	}
+	.titulo-peq-img-fila{
+    text-align: center;
+    font-size: 0.5em;
+    font-family: Rashkey, arial;
+    color: #0a0a0a;
+	}
+  .play-btn2{
+		height: 1em;
+    width: 1em;
+    margin-top: 0.8em;
+    margin-left: 0.10em;
+		cursor: pointer;
+    position: absolute;
+	}
+/*estilos de videos tipo youtube*/
 
 /*div procesos de diseños*/
 .seccion-procesos-diseños{
+  display: flex;
+  flex-wrap: wrap;
   background-color: #f4f4f4f1;
   border-radius: 5px;
+  margin-left: 1em;
+  gap: 1em;
+  width: 500px;
+  height: 300px;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 /*div informacion de nosotros (David Alejandro Garzon)*/
 .seccion-acerca-de{
+  display: flex;
+  flex-wrap: wrap;
   background-color: #f4f4f4f1;
   border-radius: 5px;
+  margin-left: 1em;
+  gap: 1em;
+  width: 500px;
+  height: 300px;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
   /*navegacion manual*/
@@ -344,30 +468,30 @@ li a:hover{
 
   }
   .pie{
-    
     display: flex;
-  align-items: center;
-  width: 1349px;
-  height: 196px;
+    align-items: center;
+    width: 1349px;
+    height: 196px;
     border-radius: 5px;
     background-image: url("Imagenes y videos/azul_ocuro.jpg");
     background-size: 1349px 500px;
     background-repeat: no-repeat;
+    margin-top: auto;
   }
   .fondo_pie{
     display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 650px;
-  height: 196px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 650px;
+    height: 196px;
    
   }
   .fondo_pie {
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
     flex-basis: 50%;
-  min-width: 250px;
+    min-width: 250px;
   
   }
   .logo_pie{
@@ -378,7 +502,7 @@ li a:hover{
     align-items: flex-start;
     justify-content: flex-start;
     width: 200px;
-  height: 180px;
+    height: 180px;
     
   }
   .logo {
